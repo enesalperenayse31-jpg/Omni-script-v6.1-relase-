@@ -1,0 +1,112 @@
+Got it! Here's a clear **English version** of the security and Omni-Script usage guide for Omni-X v6.1:
+
+---
+
+# 🛡️ Omni-X v6.1 Security & Omni-Script Usage
+
+Omni-X Core v6.1 is a powerful terminal-based development and automation tool. However, features like **Full Access**, **Delete**, **Plugins**, and **Network/VPN modules** are extremely powerful and **potentially dangerous**. Understanding their risks is crucial.
+
+---
+
+## 1️⃣ Security Warnings
+
+### 🔹 Full Access
+
+* Commands like `/delete` or `/force_delete` **permanently remove files and folders**.
+* Misuse can **crash your system** or **cause data loss**.
+* Recommendation: Only use on files/folders you are certain about.
+
+### 🔹 Plugins
+
+* Plugins loaded automatically from the `plugins/` folder are **executed immediately**.
+* Any untrusted plugin could **access personal data or system resources**.
+* Recommendation: Only use plugins you wrote or come from trusted sources.
+
+### 🔹 Network / VPN Module
+
+* `GhostNet` manages IP, Cloudflare WARP, and Kill-Switch.
+* **Kill-Switch** instantly cuts internet; if triggered by mistake, you lose connectivity.
+* VPN/IP masking is not perfect; it only encrypts traffic.
+* Recommendation: Use only for **local purposes**, never on other users' devices.
+
+### 🔹 Neural Auto-Correct
+
+* Uses `difflib` to **guess mistyped commands**.
+* Very different commands could be misinterpreted, running unintended actions.
+* Recommendation: Always **verify suggested commands** before execution.
+
+---
+
+## 2️⃣ Omni-Script Usage
+
+Omni-Script is Omni-X’s **terminal scripting language**, designed to make command usage **easy and safe**.
+
+### 🔹 Command Structure
+
+* Commands start with `/`:
+
+  ```text
+  /create_project my_game
+  /delete important_file.txt
+  /gui_tools (*gui*tools)
+  ```
+* Parentheses tool trigger:
+
+  * Example: `(*gui*tools)` → activates GUI tools.
+  * Automatically lists all copy-paste commands for that toolset.
+
+### 🔹 Activating Full Access
+
+* Both commands do the same thing:
+
+  ```text
+  /enable_full-access
+  /ver _tam-yetki
+  ```
+* Unlocks file system operations and advanced tool control.
+
+### 🔹 Neural Auto-Correct
+
+* Corrects mistyped commands:
+
+  ```text
+  /creat_projt  → Did you mean: /create_project ?
+  ```
+* Always verify before executing the suggestion.
+
+### 🔹 Network / VPN Commands
+
+* Check IP:
+
+  ```text
+  /net_scan
+  ```
+* Cloudflare WARP:
+
+  ```text
+  /warp_on
+  /warp_off
+  ```
+* Kill-Switch (disconnects internet):
+
+  ```text
+  /panic
+  ```
+
+---
+
+## 3️⃣ Usage Recommendations
+
+1. **Full Access** should only be enabled in a **secure local environment**.
+2. Plugins should come from **trusted sources** only.
+3. Network/VPN modules should be used for **monitoring and testing only**.
+4. Verify all Neural Auto-Correct suggestions before running commands.
+
+---
+
+💡 Summary:
+Omni-X Core v6.1 is a **powerful development environment**, but **misuse can cause system damage or data loss**. Omni-Script enables fast and secure terminal control, but **Full Access and Network modules require caution**.
+
+---
+
+

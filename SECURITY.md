@@ -6,10 +6,10 @@ Use this section to tell people about which versions of your project are
 currently being supported with security updates.
 
 Version,Supported,Notes
-6.1.x,:white_check_mark:,Current Stable (Ghost Network) 
-6.0.x,:white_check_mark:,Critical Patches Only 
-5.5.x,:x:                ,End of Life 
-< 5.0,:x:                ,Legacy - No Support 
+6.1.x,✅,Current Stable (Ghost Network) 
+6.0.x,✅,Critical Patches Only 
+5.5.x,❌,End of Life 
+< 5.0,❌,Legacy - No Support 
 
 ## Reporting a Vulnerability
 If you find a security breach or bug, please send it by email to enesalperenayse31@gmail.com
